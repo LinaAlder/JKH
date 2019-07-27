@@ -1,0 +1,58 @@
+body {
+    background: url("../img/Монтажная\ область\ 1.png");
+    background-repeat: no-repeat;
+    font-family: "Century Gothic";
+    height: 100vh;
+}
+
+.inter-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background: white;
+    padding: 80px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+    margin: 0 0 30px 0;
+    font-weight: normal;
+    font-size: 50px;
+}
+
+.label-block > label{
+    text-transform: uppercase;
+}
+
+.label-block > input{
+    width: 400px;
+    padding: 10px;
+    border: 1px solid rgb(200, 200, 200);
+    box-sizing: border-box;
+}
+
+button{
+    border: none;
+    display: block;
+    margin: 20px auto 0;
+    width: 400px;
+    background: #172749;
+    color: white;
+    font-size: 35px;
+    padding-bottom: 5px;
+    font-weight: normal;
+    font-family: "Century Gothic";
+}
+
+button:hover{
+    cursor: pointer;
+}
