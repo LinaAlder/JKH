@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+    <script src="js/sendRequest.js" type="text/javascript"></script>
+    <script src="js/showmap.js" type="text/javascript"></script>
+    <script type = "text/javascript" src = "https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class = "logo">Фобос</h1>
+        <div class="head-line">
+            <a href="./index.html">Главная</a>
+            <a href="./transport.html">Транспорт и оборудование</a>
+            <!-- <a href="./redactor.html">Редактор улиц</a> -->
+            <a href="">Выход</a>
+        </div>
+    </header>
+    <table cellspacing="0">
+        <tr class="table-head">
+            <td>ключевые точки</td>
+            <td>количество часов на уборку</td>
+        </tr>
+    </table>
+    <div class="info-adress">
+        <div class="streets">
+            <div class="streets-head">Улицы</div>
+            <div class="streets-info"></div>
+        </div>
+        <div class="map" id = "map">
+            <button class="close"></button>
+            <img src = "./img/cat.png" alt = "">
+        </div>
+    </div>
+    <div class = "add-street-block">
+        Введите название улицы
+        <input type = "text" id = "add-street-name" placeholder="Введите название улицы">
+        <div class = "add-street-buttons-block">
+            <button id = "add-street">Добавить</button>
+            <button id = "add-street-cansel">Отмена</button>
+        </div>
+    </div>
+</body>
+
+</html>

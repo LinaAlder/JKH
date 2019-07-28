@@ -1,0 +1,300 @@
+body{
+    background-image: url("../img/back.png");
+    font-family: "Century Gothic";
+    background-repeat: no-repeat;
+    background-position: 0 100px;
+    padding: 0;
+    margin: 0;
+}
+
+.more-button:hover, .add-adress-button:hover, button:hover{
+    cursor: pointer;
+}
+
+.head-line{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 20px 0;
+    background: white;
+    padding: 10px;
+}
+
+.head-line > a{
+    color: white;
+    text-decoration-color: transparent;
+    transition: 0.3s;
+    color: black;
+    text-transform: uppercase;
+}
+
+.map > img{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 100px;
+    z-index: 10000;
+}
+
+.logo{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: 'Poiret One', cursive;
+    text-transform: uppercase;
+    background: #172749;
+    /* background: url("../img/back.png"); */
+    margin: 0;
+    padding: 15px 0;
+}
+
+.head-line > a:hover{
+    text-decoration-color: black;
+    transform: scale(1.1);
+    font-weight: 500;
+}
+
+table{
+    width: 65%;
+    margin: auto;
+    padding: 0;
+    background: white;
+    font-size: 18px;
+    margin-top: 60px;
+}
+
+.more-button{
+    font-family: "Century Gothic";
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    color: #828282;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-decoration-color: transparent;
+}
+
+.more-button:hover{
+    text-decoration-color: #828282;
+    transition: 0.3s;
+}
+
+.block-line{
+    display: flex;
+    justify-content: space-between;
+}
+
+tbody{
+    box-shadow: 0 0 5px #f3f3f3;
+}
+td{
+    padding: 20px;
+}
+
+.table-head{
+    text-transform: uppercase;
+}
+
+.table-head > td{
+    border: solid #8dbedf;
+    border-width: 0 0 2px 0;
+}
+
+td:first-child{
+    width: 70%;
+}
+
+.table-info > td:first-child{
+    border: solid #8dbedf;
+    border-width: 0 2px 2px 0;
+}
+
+.table-info > td:last-child{
+    border: solid #8dbedf;
+    border-width: 0 0 2px 0;
+}
+
+.table-info:last-child > td{
+    border-bottom: 0px;
+}
+
+.info-adress{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: 90vh;
+    background: white;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    box-shadow: 0px 0px 20px rgb(130, 130, 130);
+    
+}
+
+.redactor{
+    width: 100%;
+    height: 100vh;
+    background: white;
+    display: flex;
+}
+
+.map{
+    position: relative;
+    height: 90vh;
+    flex: 1;
+    background-color: #f3f3f3;
+}
+.leaflet-bottom.leaflet-right, .leaflet-top.leaflet-left{
+    display: none;
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: url("../img/close.png");
+    background-size: 100% 100%;
+    background-color: #ffffff;
+    border: none;
+    z-index: 100000;
+}
+
+.info-adress > div:first-child{
+    height: 90vh;
+    flex: 0.25;
+    background: #ffffff;
+    color: black;
+    font-size: 20px;
+}
+
+.street-name{
+    border: solid white;
+    border-width: 0 0 1px 0;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.street-name-text{
+    padding: 10px 30px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.street-name-text:hover, .add-adress:hover{
+    background: #8dbedf;
+}
+
+.line{
+    height: 4px;
+    background: white;
+    border: solid white;
+    border-width: 1px 0 0 0;
+}
+
+.add-adress{
+    position: relative;
+    height: auto;
+    border: none;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.add-adress-active{
+    border: solid white;
+    border-width: 1px 0 0 0;
+    padding: 10px 0;
+}
+
+.add-adress-button{
+    display: block;
+    margin: auto;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    background-image: url("../img/plus3.png");
+    background-size: 100% 100%;
+    border: none;
+    transition: 0.3s;
+}
+
+.add-adress-button:hover {
+    background-image: url("../img/plus2.png");
+}
+
+.streets-head{
+    padding: 30px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.delete-street{
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: transparent;
+    background-image: url("../img/delete2.png");
+    background-size: 100% 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.delete-street:hover {
+    background-image: url("../img/delete.png");
+}
+
+.add-street-block{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    padding: 30px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 20;
+    font-size: 30px;
+    box-shadow: 0px 0px 20px rgb(130, 130, 130);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#add-street-name{
+    margin-top: 20px;
+    width: 70%;
+    padding: 5px 10px;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.add-street-buttons-block{
+    margin-top: 20px;
+}
+
+.add-street-buttons-block > button{
+    width: 150px;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-family: "Century Gothic";
+    font-size: 20px;
+}
+
+#add-street{
+    background: #172749;
+    margin-right: 20px;
+}
+
+#add-street-cansel{
+    background: #828282;
+}
